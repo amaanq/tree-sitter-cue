@@ -31,9 +31,9 @@
 
 (unary_expression "!~" @operator.regexp)
 
-(binary_expression _ "&" @operator.unify _)
+(binary_operator _ "&" @operator.unify _)
 
-(binary_expression _ "|" @operator.disjunct _)
+(binary_operator _ "|" @operator.disjunct _)
 
 (builtin) @function.builtin
 

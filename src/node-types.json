@@ -8,123 +8,7 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -165,139 +49,15 @@
     }
   },
   {
-    "type": "binary_expression",
+    "type": "binary_operator",
     "named": true,
     "fields": {
       "left": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "bool_type",
-            "named": true
-          },
-          {
-            "type": "bottom_lit",
-            "named": true
-          },
-          {
-            "type": "bytes_type",
-            "named": true
-          },
-          {
-            "type": "call_expression",
-            "named": true
-          },
-          {
-            "type": "false",
-            "named": true
-          },
-          {
-            "type": "float_lit",
-            "named": true
-          },
-          {
-            "type": "float_type",
-            "named": true
-          },
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "index_expression",
-            "named": true
-          },
-          {
-            "type": "int_lit",
-            "named": true
-          },
-          {
-            "type": "int_type",
-            "named": true
-          },
-          {
-            "type": "list_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_string_lit",
-            "named": true
-          },
-          {
-            "type": "null",
-            "named": true
-          },
-          {
-            "type": "number_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
-            "type": "simple_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "simple_string_lit",
-            "named": true
-          },
-          {
-            "type": "string_type",
-            "named": true
-          },
-          {
-            "type": "struct_lit",
-            "named": true
-          },
-          {
-            "type": "top_lit",
-            "named": true
-          },
-          {
-            "type": "true",
-            "named": true
-          },
-          {
-            "type": "uint_type",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
+            "type": "primary_expression",
             "named": true
           }
         ]
@@ -307,19 +67,7 @@
         "required": true,
         "types": [
           {
-            "type": "!=",
-            "named": false
-          },
-          {
-            "type": "!~",
-            "named": false
-          },
-          {
             "type": "&",
-            "named": false
-          },
-          {
-            "type": "&&",
             "named": false
           },
           {
@@ -339,169 +87,17 @@
             "named": false
           },
           {
-            "type": "<",
-            "named": false
-          },
-          {
-            "type": "<=",
-            "named": false
-          },
-          {
-            "type": "==",
-            "named": false
-          },
-          {
-            "type": "=~",
-            "named": false
-          },
-          {
-            "type": ">",
-            "named": false
-          },
-          {
-            "type": ">=",
-            "named": false
-          },
-          {
             "type": "|",
-            "named": false
-          },
-          {
-            "type": "||",
             "named": false
           }
         ]
       },
       "right": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "bool_type",
-            "named": true
-          },
-          {
-            "type": "bottom_lit",
-            "named": true
-          },
-          {
-            "type": "bytes_type",
-            "named": true
-          },
-          {
-            "type": "call_expression",
-            "named": true
-          },
-          {
-            "type": "false",
-            "named": true
-          },
-          {
-            "type": "float_lit",
-            "named": true
-          },
-          {
-            "type": "float_type",
-            "named": true
-          },
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "index_expression",
-            "named": true
-          },
-          {
-            "type": "int_lit",
-            "named": true
-          },
-          {
-            "type": "int_type",
-            "named": true
-          },
-          {
-            "type": "list_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_string_lit",
-            "named": true
-          },
-          {
-            "type": "null",
-            "named": true
-          },
-          {
-            "type": "number_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
-            "type": "simple_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "simple_string_lit",
-            "named": true
-          },
-          {
-            "type": "string_type",
-            "named": true
-          },
-          {
-            "type": "struct_lit",
-            "named": true
-          },
-          {
-            "type": "top_lit",
-            "named": true
-          },
-          {
-            "type": "true",
-            "named": true
-          },
-          {
-            "type": "uint_type",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
+            "type": "primary_expression",
             "named": true
           }
         ]
@@ -512,6 +108,46 @@
     "type": "blank_identifier",
     "named": true,
     "fields": {}
+  },
+  {
+    "type": "boolean_operator",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      },
+      "operator": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "&&",
+            "named": false
+          },
+          {
+            "type": "||",
+            "named": false
+          }
+        ]
+      },
+      "right": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "expression",
+            "named": true
+          }
+        ]
+      }
+    }
   },
   {
     "type": "builtin",
@@ -539,6 +175,70 @@
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "comparison_operator",
+    "named": true,
+    "fields": {
+      "left": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "primary_expression",
+            "named": true
+          }
+        ]
+      },
+      "operators": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "!=",
+            "named": false
+          },
+          {
+            "type": "!~",
+            "named": false
+          },
+          {
+            "type": "<",
+            "named": false
+          },
+          {
+            "type": "<=",
+            "named": false
+          },
+          {
+            "type": "==",
+            "named": false
+          },
+          {
+            "type": "=~",
+            "named": false
+          },
+          {
+            "type": ">",
+            "named": false
+          },
+          {
+            "type": ">=",
+            "named": false
+          }
+        ]
+      },
+      "right": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "primary_expression",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -577,123 +277,38 @@
       "required": false,
       "types": [
         {
-          "type": "binary_expression",
+          "type": "expression",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "binary_operator",
           "named": true
         },
         {
-          "type": "bool_type",
+          "type": "boolean_operator",
           "named": true
         },
         {
-          "type": "bottom_lit",
+          "type": "comparison_operator",
           "named": true
         },
         {
-          "type": "bytes_type",
+          "type": "not_operator",
           "named": true
         },
         {
-          "type": "call_expression",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
+          "type": "primary_expression",
           "named": true
         }
       ]
@@ -723,11 +338,6 @@
     }
   },
   {
-    "type": "float_type",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "for_clause",
     "named": true,
     "fields": {},
@@ -736,127 +346,15 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
           "type": "blank_identifier",
           "named": true
         },
         {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
+          "type": "expression",
           "named": true
         },
         {
           "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
           "named": true
         }
       ]
@@ -867,135 +365,11 @@
     "named": true,
     "fields": {
       "condition": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "bool_type",
-            "named": true
-          },
-          {
-            "type": "bottom_lit",
-            "named": true
-          },
-          {
-            "type": "bytes_type",
-            "named": true
-          },
-          {
-            "type": "call_expression",
-            "named": true
-          },
-          {
-            "type": "false",
-            "named": true
-          },
-          {
-            "type": "float_lit",
-            "named": true
-          },
-          {
-            "type": "float_type",
-            "named": true
-          },
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "index_expression",
-            "named": true
-          },
-          {
-            "type": "int_lit",
-            "named": true
-          },
-          {
-            "type": "int_type",
-            "named": true
-          },
-          {
-            "type": "list_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_string_lit",
-            "named": true
-          },
-          {
-            "type": "null",
-            "named": true
-          },
-          {
-            "type": "number_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
-            "type": "simple_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "simple_string_lit",
-            "named": true
-          },
-          {
-            "type": "string_type",
-            "named": true
-          },
-          {
-            "type": "struct_lit",
-            "named": true
-          },
-          {
-            "type": "top_lit",
-            "named": true
-          },
-          {
-            "type": "true",
-            "named": true
-          },
-          {
-            "type": "uint_type",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1030,11 +404,11 @@
         "required": false,
         "types": [
           {
-            "type": "blank_identifier",
-            "named": true
+            "type": ".",
+            "named": false
           },
           {
-            "type": "dot",
+            "type": "blank_identifier",
             "named": true
           },
           {
@@ -1107,123 +481,7 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -1238,136 +496,15 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
           "type": "index",
           "named": true
         },
         {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
+          "type": "primary_expression",
           "named": true
         }
       ]
     }
-  },
-  {
-    "type": "int_type",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "interpolation",
@@ -1378,123 +515,7 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -1520,11 +541,52 @@
       "required": true,
       "types": [
         {
-          "type": "identifier",
+          "type": "label_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "label_expr",
+    "named": true,
+    "fields": {
+      "alias": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
           "named": true
         },
         {
-          "type": "optional",
+          "type": "label_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "label_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         },
         {
@@ -1549,135 +611,11 @@
         ]
       },
       "right": {
-        "multiple": true,
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "bool_type",
-            "named": true
-          },
-          {
-            "type": "bottom_lit",
-            "named": true
-          },
-          {
-            "type": "bytes_type",
-            "named": true
-          },
-          {
-            "type": "call_expression",
-            "named": true
-          },
-          {
-            "type": "false",
-            "named": true
-          },
-          {
-            "type": "float_lit",
-            "named": true
-          },
-          {
-            "type": "float_type",
-            "named": true
-          },
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "index_expression",
-            "named": true
-          },
-          {
-            "type": "int_lit",
-            "named": true
-          },
-          {
-            "type": "int_type",
-            "named": true
-          },
-          {
-            "type": "list_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_string_lit",
-            "named": true
-          },
-          {
-            "type": "null",
-            "named": true
-          },
-          {
-            "type": "number_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
-            "type": "simple_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "simple_string_lit",
-            "named": true
-          },
-          {
-            "type": "string_type",
-            "named": true
-          },
-          {
-            "type": "struct_lit",
-            "named": true
-          },
-          {
-            "type": "top_lit",
-            "named": true
-          },
-          {
-            "type": "true",
-            "named": true
-          },
-          {
-            "type": "uint_type",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
+            "type": "expression",
             "named": true
           }
         ]
@@ -1704,26 +642,6 @@
       "required": false,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
           "type": "comprehension",
           "named": true
         },
@@ -1732,103 +650,7 @@
           "named": true
         },
         {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -1895,30 +717,46 @@
     }
   },
   {
-    "type": "optional",
+    "type": "not_operator",
     "named": true,
     "fields": {
-      "alias": {
+      "argument": {
         "multiple": false,
-        "required": false,
+        "required": true,
         "types": [
           {
-            "type": "identifier",
+            "type": "expression",
             "named": true
           }
         ]
       }
-    },
+    }
+  },
+  {
+    "type": "package_clause",
+    "named": true,
+    "fields": {},
     "children": {
       "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
+          "type": "package_identifier",
           "named": true
-        },
+        }
+      ]
+    }
+  },
+  {
+    "type": "primary_expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
         {
-          "type": "bool_type",
+          "type": "binary_operator",
           "named": true
         },
         {
@@ -1926,23 +764,15 @@
           "named": true
         },
         {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
           "type": "call_expression",
           "named": true
         },
         {
-          "type": "false",
+          "type": "expression",
           "named": true
         },
         {
           "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
           "named": true
         },
         {
@@ -1955,10 +785,6 @@
         },
         {
           "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
           "named": true
         },
         {
@@ -1986,7 +812,7 @@
           "named": true
         },
         {
-          "type": "number_type",
+          "type": "primitive",
           "named": true
         },
         {
@@ -2010,10 +836,6 @@
           "named": true
         },
         {
-          "type": "string_type",
-          "named": true
-        },
-        {
           "type": "struct_lit",
           "named": true
         },
@@ -2022,34 +844,16 @@
           "named": true
         },
         {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
+          "type": "unary_operator",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "package_clause",
+    "type": "primitive",
     "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "package_identifier",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "qualified_identifier",
@@ -2059,10 +863,6 @@
       "multiple": true,
       "required": true,
       "types": [
-        {
-          "type": "dot",
-          "named": true
-        },
         {
           "type": "identifier",
           "named": true
@@ -2083,123 +883,7 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -2210,13 +894,9 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
-        {
-          "type": "dot",
-          "named": true
-        },
         {
           "type": "identifier",
           "named": true
@@ -2237,127 +917,11 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
+          "type": "primary_expression",
           "named": true
         },
         {
           "type": "selector",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
           "named": true
         }
       ]
@@ -2467,26 +1031,6 @@
           "named": true
         },
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
           "type": "comprehension",
           "named": true
         },
@@ -2495,7 +1039,7 @@
           "named": true
         },
         {
-          "type": "false",
+          "type": "expression",
           "named": true
         },
         {
@@ -2503,31 +1047,7 @@
           "named": true
         },
         {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
           "type": "import_declaration",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
           "named": true
         },
         {
@@ -2535,79 +1055,7 @@
           "named": true
         },
         {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
           "type": "package_clause",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
           "named": true
         }
       ]
@@ -2637,26 +1085,6 @@
           "named": true
         },
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
           "type": "comprehension",
           "named": true
         },
@@ -2665,7 +1093,7 @@
           "named": true
         },
         {
-          "type": "false",
+          "type": "expression",
           "named": true
         },
         {
@@ -2673,103 +1101,7 @@
           "named": true
         },
         {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
           "type": "let_clause",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
           "named": true
         }
       ]
@@ -2781,144 +1113,15 @@
     "fields": {}
   },
   {
-    "type": "uint_type",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "unary_expression",
+    "type": "unary_operator",
     "named": true,
     "fields": {
-      "operand": {
-        "multiple": true,
+      "argument": {
+        "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": "binary_expression",
-            "named": true
-          },
-          {
-            "type": "bool_type",
-            "named": true
-          },
-          {
-            "type": "bottom_lit",
-            "named": true
-          },
-          {
-            "type": "bytes_type",
-            "named": true
-          },
-          {
-            "type": "call_expression",
-            "named": true
-          },
-          {
-            "type": "false",
-            "named": true
-          },
-          {
-            "type": "float_lit",
-            "named": true
-          },
-          {
-            "type": "float_type",
-            "named": true
-          },
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "index_expression",
-            "named": true
-          },
-          {
-            "type": "int_lit",
-            "named": true
-          },
-          {
-            "type": "int_type",
-            "named": true
-          },
-          {
-            "type": "list_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "multiline_string_lit",
-            "named": true
-          },
-          {
-            "type": "null",
-            "named": true
-          },
-          {
-            "type": "number_type",
-            "named": true
-          },
-          {
-            "type": "selector_expression",
-            "named": true
-          },
-          {
-            "type": "simple_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_bytes_lit",
-            "named": true
-          },
-          {
-            "type": "simple_raw_string_lit",
-            "named": true
-          },
-          {
-            "type": "simple_string_lit",
-            "named": true
-          },
-          {
-            "type": "string_type",
-            "named": true
-          },
-          {
-            "type": "struct_lit",
-            "named": true
-          },
-          {
-            "type": "top_lit",
-            "named": true
-          },
-          {
-            "type": "true",
-            "named": true
-          },
-          {
-            "type": "uint_type",
-            "named": true
-          },
-          {
-            "type": "unary_expression",
+            "type": "primary_expression",
             "named": true
           }
         ]
@@ -2928,47 +1131,11 @@
         "required": true,
         "types": [
           {
-            "type": "!",
-            "named": false
-          },
-          {
-            "type": "!=",
-            "named": false
-          },
-          {
-            "type": "!~",
-            "named": false
-          },
-          {
-            "type": "*",
-            "named": false
-          },
-          {
             "type": "+",
             "named": false
           },
           {
             "type": "-",
-            "named": false
-          },
-          {
-            "type": "<",
-            "named": false
-          },
-          {
-            "type": "<=",
-            "named": false
-          },
-          {
-            "type": "=~",
-            "named": false
-          },
-          {
-            "type": ">",
-            "named": false
-          },
-          {
-            "type": ">=",
             "named": false
           }
         ]
@@ -2995,123 +1162,7 @@
       "required": true,
       "types": [
         {
-          "type": "binary_expression",
-          "named": true
-        },
-        {
-          "type": "bool_type",
-          "named": true
-        },
-        {
-          "type": "bottom_lit",
-          "named": true
-        },
-        {
-          "type": "bytes_type",
-          "named": true
-        },
-        {
-          "type": "call_expression",
-          "named": true
-        },
-        {
-          "type": "false",
-          "named": true
-        },
-        {
-          "type": "float_lit",
-          "named": true
-        },
-        {
-          "type": "float_type",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "index_expression",
-          "named": true
-        },
-        {
-          "type": "int_lit",
-          "named": true
-        },
-        {
-          "type": "int_type",
-          "named": true
-        },
-        {
-          "type": "list_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "multiline_string_lit",
-          "named": true
-        },
-        {
-          "type": "null",
-          "named": true
-        },
-        {
-          "type": "number_type",
-          "named": true
-        },
-        {
-          "type": "selector_expression",
-          "named": true
-        },
-        {
-          "type": "simple_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_bytes_lit",
-          "named": true
-        },
-        {
-          "type": "simple_raw_string_lit",
-          "named": true
-        },
-        {
-          "type": "simple_string_lit",
-          "named": true
-        },
-        {
-          "type": "string_type",
-          "named": true
-        },
-        {
-          "type": "struct_lit",
-          "named": true
-        },
-        {
-          "type": "top_lit",
-          "named": true
-        },
-        {
-          "type": "true",
-          "named": true
-        },
-        {
-          "type": "uint_type",
-          "named": true
-        },
-        {
-          "type": "unary_expression",
+          "type": "expression",
           "named": true
         }
       ]
@@ -3119,10 +1170,6 @@
   },
   {
     "type": "\n",
-    "named": false
-  },
-  {
-    "type": "!",
     "named": false
   },
   {
@@ -3214,6 +1261,10 @@
     "named": false
   },
   {
+    "type": ".",
+    "named": false
+  },
+  {
     "type": "...",
     "named": false
   },
@@ -3290,16 +1341,16 @@
     "named": true
   },
   {
-    "type": "bool_type",
-    "named": true
+    "type": "bool",
+    "named": false
   },
   {
     "type": "bottom_lit",
     "named": true
   },
   {
-    "type": "bytes_type",
-    "named": true
+    "type": "bytes",
+    "named": false
   },
   {
     "type": "close",
@@ -3312,10 +1363,6 @@
   {
     "type": "div",
     "named": false
-  },
-  {
-    "type": "dot",
-    "named": true
   },
   {
     "type": "escape_byte",
@@ -3331,7 +1378,7 @@
   },
   {
     "type": "false",
-    "named": true
+    "named": false
   },
   {
     "type": "float",
@@ -3410,12 +1457,16 @@
     "named": false
   },
   {
+    "type": "not",
+    "named": false
+  },
+  {
     "type": "null",
     "named": true
   },
   {
-    "type": "number_type",
-    "named": true
+    "type": "number",
+    "named": false
   },
   {
     "type": "or",
@@ -3438,12 +1489,12 @@
     "named": false
   },
   {
-    "type": "string_type",
-    "named": true
+    "type": "string",
+    "named": false
   },
   {
     "type": "true",
-    "named": true
+    "named": false
   },
   {
     "type": "uint",
